@@ -1,0 +1,922 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.19499180741907776 -0.0030135795703782418 -0.9808002413221636 3.1719066781778875
+  position 1.0186879989917725 -0.17211392708839926 0.7878470371028016
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+  luminosity 1.2
+  castShadows FALSE
+}
+RectangleArena {
+  floorSize 2 2
+  floorTileSize 0.3 0.3
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+  wallThickness 0.05
+}
+DEF Ball-2 Solid {
+  translation -0.13 0.34 0.01
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Sphere {
+        radius 0.01
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Sphere {
+    radius 0.01
+  }
+  physics Physics {
+  }
+}
+DEF Ball-1 Solid {
+  translation -0.330182 0.594862 0.01
+  rotation 0 0 1 0.9899488552164322
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.01
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Sphere {
+    radius 0.01
+  }
+  physics Physics {
+  }
+}
+DEF Ball-3 Solid {
+  translation -0.411809 0.219913 0.01
+  rotation 0 0 1 -1.5885485306518676
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.01
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Sphere {
+    radius 0.01
+  }
+  physics Physics {
+  }
+}
+E-puck {
+  translation -0.476029 -0.0886195 -0.00125063
+  rotation 0.0022769209023177487 0.0001518200601645559 -0.9999973962875472 0.797606
+  controller "controller_simulation"
+  camera_fieldOfView 1.5
+  camera_width 640
+  camera_height 640
+  camera_rotation 0 -1 0 0.3
+}
+DEF apriltag-0 Solid {
+  translation -0.85 0.99 0.0608078
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-0.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+}
+DEF apriltag-8 Solid {
+  translation 0.99 0.25 0.0591126
+  rotation -0.577503930092469 -0.57750293009259 0.5770438254259601 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-8.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+}
+DEF apriltag-6 Solid {
+  translation 0.99 0.85 0.0591791
+  rotation -0.5775035965822977 -0.5775035965822977 0.5770434921815005 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-6.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+}
+DEF apriltag-7 Solid {
+  translation 0.99 0.55 0.0591678
+  rotation -0.577503930092469 -0.57750293009259 0.5770438254259601 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-7.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(11)"
+}
+DEF apriltag-9 Solid {
+  translation 0.99 -0.25 0.0591371
+  rotation -0.577503930092469 -0.57750293009259 0.5770438254259601 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-9.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(12)"
+}
+DEF apriltag-10 Solid {
+  translation 0.99 -0.55 0.0591285
+  rotation -0.577503930092469 -0.57750293009259 0.5770438254259601 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-10.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(13)"
+}
+DEF apriltag-11 Solid {
+  translation 0.99 -0.85 0.0591412
+  rotation -0.577503930092469 -0.57750293009259 0.5770438254259601 2.09486
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-11.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(14)"
+}
+DEF apriltag-12 Solid {
+  translation 0.85 -0.99 0.0594296
+  rotation 0 0.7071066717798298 0.7071068905932484 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-12.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(15)"
+}
+DEF apriltag-13 Solid {
+  translation 0.55 -0.99 0.0597095
+  rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-13.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(16)"
+}
+DEF apriltag-14 Solid {
+  translation 0.25 -0.99 0.0599573
+  rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-14.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(17)"
+}
+DEF apriltag-15 Solid {
+  translation -0.25 -0.99 0.0602939
+  rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-15.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(18)"
+}
+DEF apriltag-16 Solid {
+  translation -0.55 -0.99 0.0605258
+  rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-16.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(19)"
+}
+DEF apriltag-17 Solid {
+  translation -0.85 -0.99 0.0608058
+  rotation 0 0.7071067811865476 0.7071067811865476 3.14159
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-17.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(20)"
+}
+DEF apriltag-18 Solid {
+  translation -0.99 -0.85 0.0610678
+  rotation 0.5774022977920633 0.5770912472042423 0.577557165053553 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-18.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(21)"
+}
+DEF apriltag-19 Solid {
+  translation -0.99 -0.55 0.06107
+  rotation 0.5773343098895303 0.5771252290279152 0.5775911743126415 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-19.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(22)"
+}
+DEF apriltag-20 Solid {
+  translation -0.99 -0.25 0.0610718
+  rotation 0.5773343098895303 0.5771252290279152 0.5775911743126415 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-20.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(23)"
+}
+DEF apriltag-21 Solid {
+  translation -0.99 0.25 0.0610994
+  rotation 0.5771989648928784 0.5771928595177499 0.5776588594043309 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-21.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(24)"
+}
+DEF apriltag-22 Solid {
+  translation -0.99 0.55 0.0611049
+  rotation 0.5771989648928784 0.5771928595177499 0.5776588594043309 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-22.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(25)"
+}
+DEF apriltag-23 Solid {
+  translation -0.99 0.85 0.0610651
+  rotation 0.5771989648928784 0.5771928595177499 0.5776588594043309 2.09394
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-23.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(26)"
+}
+DEF apriltag-5 Solid {
+  translation 0.85 0.99 0.0592458
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-5.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(9)"
+}
+DEF apriltag-4 Solid {
+  translation 0.55 0.99 0.0595288
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-4.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(10)"
+}
+DEF apriltag-1 Solid {
+  translation -0.55 0.99 0.0609474
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-1.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(4)"
+}
+DEF apriltag-2 Solid {
+  translation -0.25 0.99 0.0609749
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-2.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+}
+DEF apriltag-3 Solid {
+  translation 0.25 0.99 0.0609485
+  rotation -1 0 0 -1.57081
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "../april-tags/tag-3.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+}
+DEF Red-Border-NW1 Pose {
+  translation -0.525 0.75 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Blue-Border-NW1 Pose {
+  translation -0.7 0.85 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-NE1 Pose {
+  translation 0.7 0.85 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-SE1 Pose {
+  translation 0.7 -0.85 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-SW1 Pose {
+  translation -0.7 -0.85 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-SW2 Pose {
+  translation -0.85 -0.7 0.001
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-SE2 Pose {
+  translation 0.85 -0.7 0.001
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-NE2 Pose {
+  translation 0.85 0.7 0.001
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Blue-Border-NW2 Pose {
+  translation -0.85 0.7 0.001
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0 0.8
+        }
+      }
+      geometry Plane {
+        size 0.05 0.35
+      }
+    }
+  ]
+}
+DEF Red-Border-NE1 Pose {
+  translation 0.525 0.75 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-SE1 Pose {
+  translation 0.525 -0.75 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-SW1 Pose {
+  translation -0.525 -0.75 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-NW2 Pose {
+  translation -0.75 0.525 0.001
+  rotation 0 0 -1 -1.569205307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-NE2 Pose {
+  translation 0.75 0.525 0.001
+  rotation 0 0 -1 -1.569205307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-SE2 Pose {
+  translation 0.75 -0.525 0.001
+  rotation 0 0 -1 -1.569205307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DEF Red-Border-SW2 Pose {
+  translation -0.75 -0.525 0.001
+  rotation 0 0 -1 -1.569205307179586
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0 0
+        }
+      }
+      geometry Plane {
+        size 0.05 0.5
+      }
+    }
+  ]
+}
+DirectionalLight {
+  direction -1 -1 0
+}
+DirectionalLight {
+  direction 1 -1 0
+}
+DirectionalLight {
+  direction -1 1 0
+}
+DirectionalLight {
+  direction 1 1 0
+}
+DEF rugby-ball Transform {
+  translation -0.252929 -0.437071 0.03
+  rotation 0 0 1 0.785398
+  scale 0.21 0.167 0.167
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.305882 0.054902 0.0588235
+        }
+      }
+      geometry Mesh {
+        url [
+          "../objects/rugby-ball.obj"
+        ]
+      }
+    }
+  ]
+}
+DEF rugby-ball Transform {
+  translation -0.493343 -0.408787 0.03
+  rotation 0 0 1 0.785398
+  scale 0.21 0.167 0.167
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.0784314 0.345098 0.839216
+        }
+      }
+      geometry Mesh {
+        url [
+          "../objects/rugby-ball.obj"
+        ]
+      }
+    }
+  ]
+}
+DEF rugby-ball Transform {
+  translation -0.75497 -0.14716 0.03
+  rotation 0 0 1 1.8326
+  scale 0.21 0.167 0.167
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 1 1 1
+        }
+        texture ImageTexture {
+          url [
+            "../objects/61713.jpg"
+          ]
+        }
+      }
+      geometry Mesh {
+        url [
+          "../objects/rugby-ball.obj"
+        ]
+      }
+    }
+  ]
+}
